@@ -15,7 +15,11 @@ module load bioinfo-tools
 module load ....
 
 
-# Your commands
+# Stop executing, if there is error
+set -euo pipefail
+
+
+# Commands
 <Command_1...>
 <Command_2...>
 
