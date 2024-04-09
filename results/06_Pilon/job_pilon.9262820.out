@@ -1,0 +1,141 @@
+Usage: java -jar $PILON_HOME/pilon.jar other-options...
+Pilon version 1.24 Thu Jan 28 13:00:45 2021 -0500
+Genome: /home/silvijas/GenomeAnalysis/analysis/03_Flye/assembly.fasta
+Fixing snps, indels, gaps, local
+Input genome size: 3190143
+Scanning BAMs
+/home/silvijas/GenomeAnalysis/analysis/05_Mapping_Illumina2PacBio/aln_Ill2PacBio_sorted.bam: 3334533 reads, 0 filtered, 3298043 mapped, 3244044 proper, 43166 stray, FR 100% 466+/-15, max 510
+Processing contig_1:1-1414511
+frags /home/silvijas/GenomeAnalysis/analysis/05_Mapping_Illumina2PacBio/aln_Ill2PacBio_sorted.bam: coverage 67
+Total Reads: 1382050, Coverage: 67, minDepth: 7
+Confirmed 1414219 of 1414511 bases (99.98%)
+Corrected 2 snps; 0 ambiguous bases; corrected 6 small insertions totaling 6 bases, 1 small deletions totaling 1 bases
+# Attempting to fix local continuity breaks
+# fix break: contig_1:1406539-1406586 0 -0 +0 NoSolution
+# fix break: contig_1:1407680-1407786 0 -0 +0 NoSolution
+# fix break: contig_1:1410034-1410041 0 -0 +0 NoSolution
+# fix break: contig_1:1414189-1414257 0 -0 +0 NoSolution
+contig_1:1-1414511 log:
+Finished processing contig_1:1-1414511
+Processing contig_10:1-201955
+frags /home/silvijas/GenomeAnalysis/analysis/05_Mapping_Illumina2PacBio/aln_Ill2PacBio_sorted.bam: coverage 72
+Total Reads: 209710, Coverage: 72, minDepth: 7
+Confirmed 201576 of 201955 bases (99.81%)
+Corrected 24 snps; 0 ambiguous bases; corrected 3 small insertions totaling 3 bases, 2 small deletions totaling 10 bases
+# Attempting to fix local continuity breaks
+# fix break: contig_10:197092-197114 0 -0 +0 NoSolution
+# fix break: contig_10:197648-197767 0 -0 +0 NoSolution
+# fix break: contig_10:197989-198039 0 -0 +0 NoSolution
+# fix break: contig_10:199824-199828 0 -0 +0 NoSolution
+# fix break: contig_10:200241-200257 0 -0 +0 NoSolution
+# fix break: contig_10:200581-200992 0 -0 +0 NoSolution
+contig_10:1-201955 log:
+Finished processing contig_10:1-201955
+Processing contig_11:1-18636
+frags /home/silvijas/GenomeAnalysis/analysis/05_Mapping_Illumina2PacBio/aln_Ill2PacBio_sorted.bam: coverage 149
+Total Reads: 43945, Coverage: 149, minDepth: 15
+Confirmed 18591 of 18636 bases (99.76%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: contig_11:900-1282 0 -0 +0 NoSolution TandemRepeat 22
+# fix break: contig_11:10226-10592 0 -0 +0 NoSolution TandemRepeat 22
+contig_11:1-18636 log:
+Finished processing contig_11:1-18636
+Processing contig_12:1-65551
+frags /home/silvijas/GenomeAnalysis/analysis/05_Mapping_Illumina2PacBio/aln_Ill2PacBio_sorted.bam: coverage 137
+Total Reads: 131320, Coverage: 137, minDepth: 14
+Confirmed 65541 of 65551 bases (99.98%)
+Corrected 0 snps; 0 ambiguous bases; corrected 8 small insertions totaling 8 bases, 2 small deletions totaling 2 bases
+contig_12:1-65551 log:
+Finished processing contig_12:1-65551
+Processing contig_2:1-1362697
+frags /home/silvijas/GenomeAnalysis/analysis/05_Mapping_Illumina2PacBio/aln_Ill2PacBio_sorted.bam: coverage 63
+Total Reads: 1251735, Coverage: 63, minDepth: 6
+Confirmed 1362310 of 1362697 bases (99.97%)
+Corrected 6 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: contig_2:1016-1086 0 -0 +0 NoSolution
+# fix break: contig_2:1358761-1358800 0 -0 +0 NoSolution
+contig_2:1-1362697 log:
+Finished processing contig_2:1-1362697
+Processing contig_3:1-38958
+frags /home/silvijas/GenomeAnalysis/analysis/05_Mapping_Illumina2PacBio/aln_Ill2PacBio_sorted.bam: coverage 139
+Total Reads: 83175, Coverage: 139, minDepth: 14
+Confirmed 37488 of 38958 bases (96.23%)
+Corrected 12 snps; 0 ambiguous bases; corrected 2 small insertions totaling 2 bases, 5 small deletions totaling 21 bases
+# Attempting to fix local continuity breaks
+# fix break: contig_3:302-364 0 -0 +0 NoSolution
+# fix break: contig_3:689-715 0 -0 +0 NoSolution
+# fix break: contig_3:2394-2435 0 -0 +0 NoSolution
+# fix break: contig_3:2731-3315 0 -0 +0 NoSolution
+# fix break: contig_3:10306-10359 0 -0 +0 NoSolution
+fix break: contig_3:10563-10587 10188 -394 +391 BreakFix
+# fix break: contig_3:12082-12089 0 -0 +0 NoSolution
+# fix break: contig_3:12297-12318 0 -0 +0 NoSolution
+fix break: contig_3:12633-13077 12612 -790 +790 BreakFix
+# fix break: contig_3:13645-13805 0 -0 +0 NoSolution
+fix break: contig_3:17339-18160 17147 -512 +510 BreakFix
+# fix break: contig_3:25983-26363 0 -0 +0 NoSolution
+# fix break: contig_3:29726-29739 0 -0 +0 NoSolution
+fix break: contig_3:30270-30277 29934 -344 +335 BreakFix
+# fix break: contig_3:30763-30767 0 -0 +0 NoSolution
+# fix break: contig_3:32830-32893 0 -0 +0 NoSolution
+contig_3:1-38958 log:
+Finished processing contig_3:1-38958
+Processing contig_4:1-26452
+frags /home/silvijas/GenomeAnalysis/analysis/05_Mapping_Illumina2PacBio/aln_Ill2PacBio_sorted.bam: coverage 131
+Total Reads: 50728, Coverage: 131, minDepth: 13
+Confirmed 25218 of 26452 bases (95.33%)
+Corrected 1 snps; 0 ambiguous bases; corrected 6 small insertions totaling 6 bases, 15 small deletions totaling 17 bases
+# Attempting to fix local continuity breaks
+# fix break: contig_4:24181-24226 0 -0 +0 NoSolution
+contig_4:1-26452 log:
+Finished processing contig_4:1-26452
+Processing contig_5:1-3675
+frags /home/silvijas/GenomeAnalysis/analysis/05_Mapping_Illumina2PacBio/aln_Ill2PacBio_sorted.bam: coverage 67
+Total Reads: 3937, Coverage: 67, minDepth: 7
+Confirmed 3675 of 3675 bases (100.00%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+contig_5:1-3675 log:
+Finished processing contig_5:1-3675
+Processing contig_7:1-10869
+frags /home/silvijas/GenomeAnalysis/analysis/05_Mapping_Illumina2PacBio/aln_Ill2PacBio_sorted.bam: coverage 97
+Total Reads: 15682, Coverage: 97, minDepth: 10
+Confirmed 10841 of 10869 bases (99.74%)
+Corrected 0 snps; 0 ambiguous bases; corrected 2 small insertions totaling 2 bases, 0 small deletions totaling 0 bases
+contig_7:1-10869 log:
+Finished processing contig_7:1-10869
+Processing contig_8:1-14415
+frags /home/silvijas/GenomeAnalysis/analysis/05_Mapping_Illumina2PacBio/aln_Ill2PacBio_sorted.bam: coverage 28
+Total Reads: 5759, Coverage: 28, minDepth: 5
+Confirmed 13947 of 14415 bases (96.75%)
+Corrected 4 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: contig_8:4422-4465 0 -0 +0 NoSolution
+# fix break: contig_8:4730-4791 0 -0 +0 NoSolution
+# fix break: contig_8:12429-12495 0 -0 +0 NoSolution
+contig_8:1-14415 log:
+Finished processing contig_8:1-14415
+Processing contig_9:1-32424
+frags /home/silvijas/GenomeAnalysis/analysis/05_Mapping_Illumina2PacBio/aln_Ill2PacBio_sorted.bam: coverage 248
+Total Reads: 129958, Coverage: 248, minDepth: 25
+Confirmed 32289 of 32424 bases (99.58%)
+Corrected 0 snps; 0 ambiguous bases; corrected 0 small insertions totaling 0 bases, 0 small deletions totaling 0 bases
+# Attempting to fix local continuity breaks
+# fix break: contig_9:18626-19529 0 -0 +0 NoSolution
+# fix break: contig_9:20660-21958 0 -0 +0 NoSolution
+contig_9:1-32424 log:
+Finished processing contig_9:1-32424
+Writing updated contig_1_pilon to /home/silvijas/GenomeAnalysis/analysis/06_Pilon/pilon.fasta
+Writing updated contig_10_pilon to /home/silvijas/GenomeAnalysis/analysis/06_Pilon/pilon.fasta
+Writing updated contig_11_pilon to /home/silvijas/GenomeAnalysis/analysis/06_Pilon/pilon.fasta
+Writing updated contig_12_pilon to /home/silvijas/GenomeAnalysis/analysis/06_Pilon/pilon.fasta
+Writing updated contig_2_pilon to /home/silvijas/GenomeAnalysis/analysis/06_Pilon/pilon.fasta
+Writing updated contig_3_pilon to /home/silvijas/GenomeAnalysis/analysis/06_Pilon/pilon.fasta
+Writing updated contig_4_pilon to /home/silvijas/GenomeAnalysis/analysis/06_Pilon/pilon.fasta
+Writing updated contig_5_pilon to /home/silvijas/GenomeAnalysis/analysis/06_Pilon/pilon.fasta
+Writing updated contig_7_pilon to /home/silvijas/GenomeAnalysis/analysis/06_Pilon/pilon.fasta
+Writing updated contig_8_pilon to /home/silvijas/GenomeAnalysis/analysis/06_Pilon/pilon.fasta
+Writing updated contig_9_pilon to /home/silvijas/GenomeAnalysis/analysis/06_Pilon/pilon.fasta
+Mean frags coverage: 71
+Mean total coverage: 71
