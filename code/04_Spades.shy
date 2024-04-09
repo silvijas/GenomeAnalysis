@@ -21,10 +21,10 @@ set -euo pipefail
 
 # Commands
 
-#zcat ~/GenomeAnalysis/data/DNA/PacBio/* > ~/GenomeAnalysis/total_PacBio.fastq.gz
-
+zcat ~/GenomeAnalysis/data/DNA/PacBio/* > ~/GenomeAnalysis/total_PacBio.fastq
+gzip ~/GenomeAnalysis/total_PacBio.fastq
 
 spades.py -1 /home/silvijas/GenomeAnalysis/data/DNA/Illumina/E745-1.L500_SZAXPI015146-56_1_clean.fq.gz -2 /home/silvijas/GenomeAnalysis/data/DNA/Illumina/E745-1.L500_SZAXPI015146-56_2_clean.fq.gz --pacbio /home/silvijas/GenomeAnalysis/total_PacBio.fastq.gz -o /home/silvijas/GenomeAnalysis/analysis/04_Spades
 
 
-#rm ~/GenomeAnalysis/total_PacBio.fastq.gz
+rm ~/GenomeAnalysis/total_PacBio.fastq.gz
