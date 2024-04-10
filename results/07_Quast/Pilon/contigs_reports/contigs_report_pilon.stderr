@@ -1,0 +1,10 @@
+[M::mm_idx_gen::0.157*1.03] collected minimizers
+[M::mm_idx_gen::0.185*1.86] sorted minimizers
+[M::main::0.185*1.86] loaded/built the index for 2 target sequence(s)
+[M::mm_mapopt_update::0.194*1.82] mid_occ = 200
+[M::mm_idx_stat] kmer size: 19; skip: 19; is_hpc: 0; #seq: 2
+[M::mm_idx_stat::0.200*1.79] distinct minimizers: 271956 (97.39% are singletons); average occurrences: 1.073; average spacing: 10.005
+[M::worker_pipeline::0.890*2.08] mapped 11 sequences
+[M::main] Version: 2.11-r797
+[M::main] CMD: /sw/bioinfo/quast/5.0.2/rackham/lib/python3.7/site-packages/quast_libs/minimap2/minimap2 -c -x asm5 -B5 -O4,16 --no-long-join -r 85 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 --cs -t 8 /home/silvijas/GenomeAnalysis/analysis/07_Quast/Pilon/quast_corrected_input/GCF_009734005.1_ASM973400v2_genomic.fna /home/silvijas/GenomeAnalysis/analysis/07_Quast/Pilon/quast_corrected_input/pilon.fasta
+[M::main] Real time: 0.906 sec; CPU: 1.864 sec

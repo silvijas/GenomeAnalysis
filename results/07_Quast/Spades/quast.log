@@ -1,0 +1,134 @@
+/sw/bioinfo/quast/5.0.2/snowy/bin/quast.py /home/silvijas/GenomeAnalysis/analysis/04_Spades/contigs.fasta -r /home/silvijas/GenomeAnalysis/data/REF/GCF_009734005.1_ASM973400v2_genomic.fna.gz -o /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades --threads 8 --gene-finding
+
+Version: 5.0.2
+
+System information:
+  OS: Linux-3.10.0-1160.114.2.el7.x86_64-x86_64-with-centos-7.9.2009-Core (linux_64)
+  Python version: 3.7.2
+  CPUs number: 16
+
+Started: 2024-04-10 13:54:18
+
+Logging to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/quast.log
+
+CWD: /domus/h1/silvijas/GenomeAnalysis/code
+Main parameters: 
+  MODE: default, threads: 8, minimum contig length: 500, minimum alignment length: 65, \
+  ambiguity: one, threshold for extensive misassembly size: 1000
+
+Reference:
+  /home/silvijas/GenomeAnalysis/data/REF/GCF_009734005.1_ASM973400v2_genomic.fna.gz ==> GCF_009734005.1_ASM973400v2_genomic
+
+Contigs:
+  Pre-processing...
+  /home/silvijas/GenomeAnalysis/analysis/04_Spades/contigs.fasta ==> contigs
+
+2024-04-10 13:54:26
+Running Basic statistics processor...
+  Reference genome:
+    GCF_009734005.1_ASM973400v2_genomic.fna, length = 2919198, num fragments = 2, GC % = 37.88
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 2027623, L50 = 1, Total length = 3143472, GC % = 37.69, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 5x)...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 5x)...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+2024-04-10 13:54:29
+Running Contig analyzer...
+  contigs
+  Logging to files /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/contigs_reports/contigs_report_contigs.stdout and contigs_report_contigs.stderr...
+  Aligning contigs to the reference
+  /sw/bioinfo/quast/5.0.2/rackham/lib/python3.7/site-packages/quast_libs/minimap2/minimap2 \
+  -c -x asm5 -B5 -O4,16 --no-long-join -r 85 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ \
+  200 -g 2500 --score-N 2 --cs -t 8 /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/quast_corrected_input/GCF_009734005.1_ASM973400v2_genomic.fna \
+  /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/quast_corrected_input/contigs.fasta \
+  > /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/contigs_reports/minimap_output/contigs.coords_tmp \
+  2>> /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/contigs_reports/contigs_report_contigs.stderr
+  Analysis is finished.
+
+  Creating total report...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2024-04-10 13:54:32
+Running NA-NGA calculation...
+  contigs, Largest alignment = 137660, NA50 = 24276, NGA50 = 27356, LA50 = 32, LGA50 = 27
+  Drawing cumulative plot...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/aligned_stats/NGAx_plot.pdf
+Done.
+
+2024-04-10 13:54:33
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+2024-04-10 13:54:34
+Running GeneMarkS...
+  contigs
+    perl /sw/bioinfo/quast/5.0.2/rackham/lib/python3.7/site-packages/quast_libs/genemark/linux_64/gmsn.pl \
+    --name contigs --clean --out /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/predicted_genes/tmp/tmpn21b8rmu \
+    /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/quast_corrected_input/contigs.fasta \
+    > /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/predicted_genes/contigs_genemark.stderr \
+    2> /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/predicted_genes/contigs_genemark.stderr
+    The tool returned non-zero. See ../../../../../home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/predicted_genes/contigs_genemark.stderr for stderr.
+
+WARNING: License period for GeneMark has ended! 
+To update license, please visit http://exon.gatech.edu/GeneMark/license_download.cgi page and fill in the form.
+You should choose GeneMarkS tool and your operating system (note that GeneMark is free for non-commercial use).
+Download the license key and replace your ~/.gm_key with the updated version. After that you can restart QUAST.
+
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-04-10 13:54:35
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2024-04-10 13:54:37
+RESULTS:
+  Text versions of total report are saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/report.html
+  PDF version (tables and plots) is saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/report.pdf
+  Icarus (contig browser) is saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/icarus.html
+  Log is saved to /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/quast.log
+
+Finished: 2024-04-10 13:54:37
+Elapsed time: 0:00:19.484765
+NOTICEs: 3; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

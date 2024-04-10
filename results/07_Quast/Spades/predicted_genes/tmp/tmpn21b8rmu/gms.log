@@ -1,0 +1,76 @@
+
+
+
+-------------------------------------------------
+start time            : Wed Apr 10 13:54:34 2024
+GMS version           : 4.30 October 2014
+working directory     : /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/predicted_genes/tmp/tmpn21b8rmu
+command line          : --name contigs --clean --out /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/predicted_genes/tmp/tmpn21b8rmu /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/quast_corrected_input/contigs.fasta
+output file with predictions : contigs.fasta.lst
+input sequence        : /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/quast_corrected_input/contigs.fasta
+output name for model : contigs
+combine model         : 
+GeneMark model        : 
+species name          : 
+delete temp files     : 1
+markov chain order    : 2
+non-coding order      : 2
+genetic code          : 11
+sequence organization : partial
+search for motif      : 1
+motif width           : 6
+prestart length       : 40
+identity threshold    : 0.99
+maximum iteration     : 10
+fixed motif position  : 
+gene overlap off      : 
+strand to predict on  : both
+mode prokaryotic      : 
+mode eukaryotic       : 
+mode virus            : 
+mode phage            : 
+mode est              : 
+GeneMarkS parameters  : /sw/bioinfo/quast/5.0.2/rackham/lib/python3.7/site-packages/quast_libs/genemark/linux_64/par_11.default
+initial hmm model     : 
+output format         : LST
+output PostScript     : 
+output PDF            : 
+output nucleotides    : 
+output proteins       : 
+gibbs version         : 3
+heuristic version     : 2
+evidense data file    : 
+combine native with   : 
+use input defline     : 
+
+      run starts here:
+prepare sequence
+/sw/bioinfo/quast/5.0.2/rackham/lib/python3.7/site-packages/quast_libs/genemark/linux_64/probuild --par /sw/bioinfo/quast/5.0.2/rackham/lib/python3.7/site-packages/quast_libs/genemark/linux_64/par_11.default  --clean_join sequence --seq /home/silvijas/GenomeAnalysis/analysis/07_Quast/Spades/quast_corrected_input/contigs.fasta --log gms.log
+Clean-Join      IN   OUT
+Contigs - 12 12
+All letters - 3143472   3144022
+Unambiguous letters - 3143472 3143472
+A - 994385 994385
+C - 581240 581240
+G - 603439 603439
+T - 964408 964408
+N - 0 0
+Parameters:
+  Minimum of unambiguous letters per record: 1000
+  Trim down substrings "N...N" to maximum length: 50
+  Connect records using gap filler: NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+  Minimum of unambiguous letters in output: 50000
+system call done
+do_iterations = 1
+set initial <gmhmmp> model
+get GC
+/sw/bioinfo/quast/5.0.2/rackham/lib/python3.7/site-packages/quast_libs/genemark/linux_64/probuild --par /sw/bioinfo/quast/5.0.2/rackham/lib/python3.7/site-packages/quast_libs/genemark/linux_64/par_11.default  --gc --seq sequence
+GC of sequence = 38
+initial <gmhmm> model: /sw/bioinfo/quast/5.0.2/rackham/lib/python3.7/site-packages/quast_libs/genemark/linux_64/heuristic_mod/heu_11_38.mod
+copy initial model to working directory
+cp /sw/bioinfo/quast/5.0.2/rackham/lib/python3.7/site-packages/quast_libs/genemark/linux_64/heuristic_mod/heu_11_38.mod  itr_0.mod
+system call done
+run initial prediction
+/sw/bioinfo/quast/5.0.2/rackham/lib/python3.7/site-packages/quast_libs/genemark/linux_64/gmhmmp -g 11   sequence  -m itr_0.mod  -o itr_0.lst
+Error on last system call, error code 256
+Abort program!!!

@@ -1,0 +1,597 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+2665962	2687497	1745	23280	NZ_CP038996.1	contig_1_pilon	100.0		True
+relocation, inconsistency = 1783
+2689281	2719482	23281	53484	NZ_CP038996.1	contig_1_pilon	99.77		True
+relocation, inconsistency = -1620
+2719481	2796178	55103	131798	NZ_CP038996.1	contig_1_pilon	99.71		True
+fake: not a misassembly [linear representation of circular genome]
+1	39031	131799	170829	NZ_CP038996.1	contig_1_pilon	99.99		True
+relocation, inconsistency = 12149
+51181	92302	170830	212015	NZ_CP038996.1	contig_1_pilon	99.6		True
+translocation
+92725	94051	215105	213779	NZ_CP038997.1	contig_1_pilon	99.77		True
+translocation
+1730681	1732019	215367	216705	NZ_CP038996.1	contig_1_pilon	99.85		True
+translocation
+73299	74341	219528	218486	NZ_CP038997.1	contig_1_pilon	99.62		True
+translocation
+92319	101622	219611	228914	NZ_CP038996.1	contig_1_pilon	99.74		True
+relocation, inconsistency = -1620
+101621	121009	230533	249920	NZ_CP038996.1	contig_1_pilon	99.36		True
+local misassembly
+121131	121301	249921	250091	NZ_CP038996.1	contig_1_pilon	98.08		True
+relocation, inconsistency = 215330
+336632	337695	251155	250092	NZ_CP038996.1	contig_1_pilon	99.72		True
+relocation, inconsistency = 215067
+121299	121564	251156	251422	NZ_CP038996.1	contig_1_pilon	99.63		True
+translocation
+92724	94048	252751	251427	NZ_CP038997.1	contig_1_pilon	99.85		True
+translocation
+121566	123300	252756	254489	NZ_CP038996.1	contig_1_pilon	99.19		True
+translocation
+73302	74339	254490	255515	NZ_CP038997.1	contig_1_pilon	98.47		True
+translocation
+123292	126150	255516	258374	NZ_CP038996.1	contig_1_pilon	99.58		True
+relocation, inconsistency = 1113832
+1239983	1241047	259439	258375	NZ_CP038996.1	contig_1_pilon	99.91		True
+relocation, inconsistency = 1084208
+131940	155773	259441	283270	NZ_CP038996.1	contig_1_pilon	99.4		True
+relocation, inconsistency = 1530003
+1685824	1686887	283318	284381	NZ_CP038996.1	contig_1_pilon	99.62		True
+relocation, inconsistency = -1529724
+157164	157301	284382	284519	NZ_CP038996.1	contig_1_pilon	100.0		True
+local misassembly
+157465	173374	284560	300459	NZ_CP038996.1	contig_1_pilon	99.6		True
+local misassembly
+173349	180694	300558	307906	NZ_CP038996.1	contig_1_pilon	99.62		True
+inversion
+180695	182104	309316	307907	NZ_CP038996.1	contig_1_pilon	99.86		True
+inversion
+182105	206382	309317	333592	NZ_CP038996.1	contig_1_pilon	99.21		True
+relocation, inconsistency = 1891
+208279	216200	333598	341518	NZ_CP038996.1	contig_1_pilon	99.38		True
+relocation, inconsistency = 2113504
+2329705	2331382	343196	341519	NZ_CP038996.1	contig_1_pilon	100.0		True
+relocation, inconsistency = 2110481
+216196	219223	343197	346224	NZ_CP038996.1	contig_1_pilon	99.47		True
+relocation, inconsistency = 117408
+336632	337699	346225	347292	NZ_CP038996.1	contig_1_pilon	99.53		True
+relocation, inconsistency = -122236
+224009	234317	355838	366144	NZ_CP038996.1	contig_1_pilon	99.26		True
+relocation, inconsistency = 1474
+235792	239800	366145	370153	NZ_CP038996.1	contig_1_pilon	99.4		True
+local misassembly
+239898	243836	370154	374092	NZ_CP038996.1	contig_1_pilon	99.44		True
+relocation, inconsistency = 3014
+246946	247221	374188	374463	NZ_CP038996.1	contig_1_pilon	95.29		True
+relocation, inconsistency = 1797518
+2052534	2053899	383623	382258	NZ_CP038996.1	contig_1_pilon	99.93		True
+translocation
+73301	74340	385985	384945	NZ_CP038997.1	contig_1_pilon	99.52		True
+translocation
+2329704	2331382	390449	392127	NZ_CP038996.1	contig_1_pilon	99.88		True
+relocation, inconsistency = -1224337
+1107138	1108478	392220	393559	NZ_CP038996.1	contig_1_pilon	99.63		True
+relocation, inconsistency = 836779
+1946856	1948533	396835	395158	NZ_CP038996.1	contig_1_pilon	99.94		True
+relocation, inconsistency = 1599171
+336631	337695	406825	407889	NZ_CP038996.1	contig_1_pilon	99.44		True
+relocation, inconsistency = 202317
+540441	540880	408318	408757	NZ_CP038996.1	contig_1_pilon	96.82		True
+relocation, inconsistency = -294642
+253636	254003	416155	416522	NZ_CP038996.1	contig_1_pilon	99.73		True
+relocation, inconsistency = 82628
+336632	337697	416523	417588	NZ_CP038996.1	contig_1_pilon	99.44		True
+relocation, inconsistency = -75355
+264613	264952	419859	420198	NZ_CP038996.1	contig_1_pilon	95.68		True
+relocation, inconsistency = 1346
+266299	270536	420199	424427	NZ_CP038996.1	contig_1_pilon	96.39		True
+relocation, inconsistency = 66094
+336631	337694	425491	424428	NZ_CP038996.1	contig_1_pilon	99.53		True
+relocation, inconsistency = 22382
+311662	314219	425521	428083	NZ_CP038996.1	contig_1_pilon	95.94		True
+relocation, inconsistency = -1746
+314349	330599	429959	446203	NZ_CP038996.1	contig_1_pilon	95.28		True
+local misassembly
+330725	336627	446207	452108	NZ_CP038996.1	contig_1_pilon	99.0		True
+relocation, inconsistency = 1067
+337695	346927	452109	461332	NZ_CP038996.1	contig_1_pilon	98.75		True
+relocation, inconsistency = -10295
+336633	337692	461333	462392	NZ_CP038996.1	contig_1_pilon	99.62		True
+relocation, inconsistency = 9228
+346921	367720	462393	483193	NZ_CP038996.1	contig_1_pilon	99.75		True
+relocation, inconsistency = 1579135
+1946856	1948533	484871	483194	NZ_CP038996.1	contig_1_pilon	99.94		True
+relocation, inconsistency = 1577276
+367716	369443	484872	486602	NZ_CP038996.1	contig_1_pilon	96.27		True
+local misassembly
+369323	391978	486603	509259	NZ_CP038996.1	contig_1_pilon	99.86		True
+relocation, inconsistency = 1522
+393501	416964	509260	532781	NZ_CP038996.1	contig_1_pilon	99.35		True
+relocation, inconsistency = 1065
+418032	424623	532784	539374	NZ_CP038996.1	contig_1_pilon	99.91		True
+relocation, inconsistency = 1541
+426165	428598	539375	541808	NZ_CP038996.1	contig_1_pilon	99.96		True
+relocation, inconsistency = 1783
+430382	447093	541809	558520	NZ_CP038996.1	contig_1_pilon	99.95		True
+relocation, inconsistency = 2690
+449784	463044	558521	571781	NZ_CP038996.1	contig_1_pilon	99.86		True
+relocation, inconsistency = 1332
+464377	476484	571782	583888	NZ_CP038996.1	contig_1_pilon	99.3		True
+local misassembly
+476476	479940	584247	587689	NZ_CP038996.1	contig_1_pilon	98.41		True
+relocation, inconsistency = -12696
+481307	534273	601752	654713	NZ_CP038996.1	contig_1_pilon	99.71		True
+relocation, inconsistency = 4911
+539745	542152	655274	657681	NZ_CP038996.1	contig_1_pilon	97.05		True
+local misassembly
+543207	549581	658763	665142	NZ_CP038996.1	contig_1_pilon	97.86		True
+relocation, inconsistency = 1332
+550914	585152	665143	699386	NZ_CP038996.1	contig_1_pilon	99.97		True
+relocation, inconsistency = 1522
+586675	724327	699387	837046	NZ_CP038996.1	contig_1_pilon	99.99		True
+relocation, inconsistency = 1522
+725850	771492	837047	882690	NZ_CP038996.1	contig_1_pilon	99.89		True
+local misassembly
+772784	773258	884798	885272	NZ_CP038996.1	contig_1_pilon	96.84		True
+local misassembly
+774001	774860	885877	886737	NZ_CP038996.1	contig_1_pilon	96.17		True
+relocation, inconsistency = 1530320
+2308643	2309180	890737	890200	NZ_CP038996.1	contig_1_pilon	95.91		True
+relocation, inconsistency = 287389
+2019156	2019661	892835	892330	NZ_CP038996.1	contig_1_pilon	96.05		True
+relocation, inconsistency = 1234914
+783151	783293	893784	893926	NZ_CP038996.1	contig_1_pilon	97.9		True
+local misassembly
+783424	794709	894285	905574	NZ_CP038996.1	contig_1_pilon	98.21		True
+local misassembly
+794901	796002	905766	906867	NZ_CP038996.1	contig_1_pilon	97.55		True
+local misassembly
+796095	796352	906972	907229	NZ_CP038996.1	contig_1_pilon	97.69		True
+relocation, inconsistency = 866159
+1662512	1664024	907230	908742	NZ_CP038996.1	contig_1_pilon	100.0		True
+relocation, inconsistency = 337911
+2001936	2005659	912466	908743	NZ_CP038996.1	contig_1_pilon	99.17		True
+local misassembly
+1993593	2001085	920851	913359	NZ_CP038996.1	contig_1_pilon	99.35		True
+relocation, inconsistency = -220917
+2213750	2214073	921611	921288	NZ_CP038996.1	contig_1_pilon	99.69		True
+relocation, inconsistency = 507411
+1704873	1706338	923077	921612	NZ_CP038996.1	contig_1_pilon	100.0		True
+relocation, inconsistency = -507553
+2177893	2212374	957630	923129	NZ_CP038996.1	contig_1_pilon	99.88		True
+local misassembly
+2164578	2177917	971195	957851	NZ_CP038996.1	contig_1_pilon	99.9		True
+relocation, inconsistency = 1522
+2117276	2163055	1016976	971196	NZ_CP038996.1	contig_1_pilon	99.99		True
+relocation, inconsistency = 1891
+2096769	2115384	1035592	1016977	NZ_CP038996.1	contig_1_pilon	99.99		True
+relocation, inconsistency = 1066
+2094046	2095702	1037249	1035593	NZ_CP038996.1	contig_1_pilon	99.94		True
+relocation, inconsistency = -595240
+2687500	2689285	1039035	1037250	NZ_CP038996.1	contig_1_pilon	99.94		True
+relocation, inconsistency = 593457
+2077440	2094042	1055638	1039036	NZ_CP038996.1	contig_1_pilon	99.99		True
+relocation, inconsistency = 1522
+2064476	2075917	1067080	1055639	NZ_CP038996.1	contig_1_pilon	99.99		True
+relocation, inconsistency = 1783
+2031859	2062692	1097914	1067081	NZ_CP038996.1	contig_1_pilon	99.99		True
+relocation, inconsistency = 40270
+1964801	1991588	1124702	1097915	NZ_CP038996.1	contig_1_pilon	99.99		True
+relocation, inconsistency = 1522
+1953473	1963278	1134503	1124703	NZ_CP038996.1	contig_1_pilon	98.57		True
+relocation, inconsistency = -15190
+1948561	1953410	1154613	1149756	NZ_CP038996.1	contig_1_pilon	95.72		True
+relocation, inconsistency = 1281
+1944837	1946265	1157059	1155628	NZ_CP038996.1	contig_1_pilon	95.76		True
+relocation, inconsistency = 1066
+1931979	1943770	1168851	1157060	NZ_CP038996.1	contig_1_pilon	99.54		True
+local misassembly
+1889654	1931856	1211006	1168852	NZ_CP038996.1	contig_1_pilon	98.45		True
+relocation, inconsistency = 1665838
+222400	223815	1211007	1212422	NZ_CP038996.1	contig_1_pilon	100.0		True
+relocation, inconsistency = 1646444
+1870260	1889656	1231839	1212423	NZ_CP038996.1	contig_1_pilon	97.35		True
+local misassembly
+1868163	1870303	1234056	1231916	NZ_CP038996.1	contig_1_pilon	98.69		True
+relocation, inconsistency = 1500
+1843757	1866649	1256963	1234070	NZ_CP038996.1	contig_1_pilon	99.47		True
+relocation, inconsistency = -233683
+2075926	2077439	1258477	1256964	NZ_CP038996.1	contig_1_pilon	100.0		True
+relocation, inconsistency = 232161
+1832301	1843764	1269942	1258478	NZ_CP038996.1	contig_1_pilon	99.56		True
+relocation, inconsistency = -1620
+1823327	1832302	1280534	1271561	NZ_CP038996.1	contig_1_pilon	98.7		True
+local misassembly
+1808581	1821986	1295286	1281881	NZ_CP038996.1	contig_1_pilon	98.67		True
+relocation, inconsistency = 1783
+1792198	1806797	1309894	1295287	NZ_CP038996.1	contig_1_pilon	97.4		True
+relocation, inconsistency = -1017
+1789959	1791529	1313150	1311580	NZ_CP038996.1	contig_1_pilon	97.9		True
+relocation, inconsistency = 933652
+846968	848293	1321164	1322489	NZ_CP038996.1	contig_1_pilon	99.85		True
+relocation, inconsistency = 925143
+1776604	1782639	1331692	1325657	NZ_CP038996.1	contig_1_pilon	98.44		True
+local misassembly
+1765229	1775301	1342126	1332048	NZ_CP038996.1	contig_1_pilon	95.62		True
+relocation, inconsistency = 1522
+1757730	1763706	1348103	1342127	NZ_CP038996.1	contig_1_pilon	99.38		True
+local misassembly
+1750890	1757736	1355298	1348468	NZ_CP038996.1	contig_1_pilon	98.92		True
+relocation, inconsistency = -326681
+2075926	2077440	1356943	1355429	NZ_CP038996.1	contig_1_pilon	100.0		True
+relocation, inconsistency = 325037
+1745120	1750888	1362712	1356944	NZ_CP038996.1	contig_1_pilon	98.04		True
+relocation, inconsistency = 1522
+1734573	1743597	1371739	1362713	NZ_CP038996.1	contig_1_pilon	99.86		True
+relocation, inconsistency = 267422
+1465787	1467124	1373103	1371766	NZ_CP038996.1	contig_1_pilon	99.93		True
+relocation, inconsistency = 1241957
+222400	223820	1373113	1374533	NZ_CP038996.1	contig_1_pilon	100.0		True
+relocation, inconsistency = 1502714
+1726636	1730680	1378679	1374635	NZ_CP038996.1	contig_1_pilon	99.88		True
+relocation, inconsistency = -806819
+2531939	2533454	1380195	1378680	NZ_CP038996.1	contig_1_pilon	99.93		True
+relocation, inconsistency = 806362
+1725286	1725533	1380486	1380239	NZ_CP038996.1	contig_1_pilon	100.0		True
+indel: indel (> 5bp)
+1724973	1725256	1380770	1380487	NZ_CP038996.1	contig_1_pilon	100.0		True
+relocation, inconsistency = 1489191
+234315	235781	1382237	1380771	NZ_CP038996.1	contig_1_pilon	100.0		True
+relocation, inconsistency = -1490661
+1722018	1724969	1385195	1382244	NZ_CP038996.1	contig_1_pilon	99.93		True
+relocation, inconsistency = 363243
+1357272	1358774	1386698	1385196	NZ_CP038996.1	contig_1_pilon	100.0		True
+relocation, inconsistency = -364754
+1707648	1722025	1401074	1386699	NZ_CP038996.1	contig_1_pilon	99.94		True
+CONTIG	contig_1_pilon	1414516	misassembled
+1677113	1678628	10412	11927	NZ_CP038996.1	contig_10_pilon	99.87		True
+unknown
+1677189	1678628	11928	13367	NZ_CP038996.1	contig_10_pilon	99.79		True
+unknown
+1677189	1680093	13368	16214	NZ_CP038996.1	contig_10_pilon	97.93		True
+unknown
+102146	102953	19005	18198	NZ_CP038997.1	contig_10_pilon	99.63		True
+unknown
+424614	426150	23004	21468	NZ_CP038996.1	contig_10_pilon	99.87		True
+unknown
+983432	983856	23544	23120	NZ_CP038996.1	contig_10_pilon	99.76		True
+unknown
+102145	102588	23926	23484	NZ_CP038997.1	contig_10_pilon	98.42		True
+unknown
+29464	31360	28021	26125	NZ_CP038997.1	contig_10_pilon	95.63		True
+unknown
+979082	979890	38071	38879	NZ_CP038996.1	contig_10_pilon	99.63		True
+unknown
+987066	987874	45917	45109	NZ_CP038996.1	contig_10_pilon	99.75		True
+unknown
+1108971	1110475	50609	52113	NZ_CP038996.1	contig_10_pilon	99.93		True
+unknown
+829635	830695	55534	54474	NZ_CP038996.1	contig_10_pilon	99.62		True
+unknown
+1465787	1467127	56929	58269	NZ_CP038996.1	contig_10_pilon	100.0		True
+unknown
+1240351	1241048	59652	58955	NZ_CP038996.1	contig_10_pilon	100.0		True
+unknown
+264974	266289	59666	60981	NZ_CP038996.1	contig_10_pilon	99.77		True
+unknown
+336632	337695	66362	65299	NZ_CP038996.1	contig_10_pilon	99.72		True
+unknown
+73301	74340	68359	69398	NZ_CP038997.1	contig_10_pilon	99.62		True
+unknown
+97232	99128	70420	72316	NZ_CP038997.1	contig_10_pilon	95.52		True
+unknown
+804089	805454	76139	74774	NZ_CP038996.1	contig_10_pilon	99.41		True
+unknown
+1995903	1997269	77389	78755	NZ_CP038996.1	contig_10_pilon	99.71		True
+unknown
+838169	840442	82478	84750	NZ_CP038996.1	contig_10_pilon	99.96		True
+unknown
+391987	393500	86263	84750	NZ_CP038996.1	contig_10_pilon	99.87		True
+unknown
+302063	303594	88123	86588	NZ_CP038996.1	contig_10_pilon	99.09		True
+unknown
+1720635	1722134	96199	97698	NZ_CP038996.1	contig_10_pilon	99.6		True
+unknown
+1720631	1722139	115603	114095	NZ_CP038996.1	contig_10_pilon	98.28		True
+unknown
+1107138	1108477	119094	117755	NZ_CP038996.1	contig_10_pilon	99.78		True
+unknown
+1104357	1106253	121411	119515	NZ_CP038996.1	contig_10_pilon	99.95		True
+unknown
+391987	393505	121504	123022	NZ_CP038996.1	contig_10_pilon	100.0		True
+unknown
+222400	223815	126163	124748	NZ_CP038996.1	contig_10_pilon	99.93		True
+unknown
+479941	481306	126293	127658	NZ_CP038996.1	contig_10_pilon	99.85		True
+unknown
+29464	31360	134318	136214	NZ_CP038997.1	contig_10_pilon	95.52		True
+unknown
+424623	426141	136256	137774	NZ_CP038996.1	contig_10_pilon	100.0		True
+unknown
+479941	481306	138237	139601	NZ_CP038996.1	contig_10_pilon	99.85		True
+unknown
+1978661	1979725	145483	146547	NZ_CP038996.1	contig_10_pilon	100.0		True
+unknown
+2052532	2053899	151360	152726	NZ_CP038996.1	contig_10_pilon	99.93		True
+unknown
+2062687	2064478	153581	155372	NZ_CP038996.1	contig_10_pilon	99.94		True
+unknown
+2329703	2331382	159127	160806	NZ_CP038996.1	contig_10_pilon	99.88		True
+unknown
+443473	443594	161922	162043	NZ_CP038996.1	contig_10_pilon	96.72		True
+unknown
+443593	444458	162618	163482	NZ_CP038996.1	contig_10_pilon	98.73		True
+unknown
+92724	94048	168290	169614	NZ_CP038997.1	contig_10_pilon	100.0		True
+unknown
+102145	102953	171618	170839	NZ_CP038997.1	contig_10_pilon	95.44		True
+unknown
+1465787	1467127	183623	182283	NZ_CP038996.1	contig_10_pilon	99.85		True
+unknown
+1978661	1979726	184176	185241	NZ_CP038996.1	contig_10_pilon	99.91		True
+unknown
+972161	973410	188615	187363	NZ_CP038996.1	contig_10_pilon	95.47		True
+unknown
+969204	969495	191927	191636	NZ_CP038996.1	contig_10_pilon	98.29		True
+unknown
+958612	960407	199623	197828	NZ_CP038996.1	contig_10_pilon	99.89		True
+unknown
+CONTIG	contig_10_pilon	201948	mis_unaligned
+CONTIG	contig_11_pilon	18636	unaligned
+838166	840513	52016	54363	NZ_CP038996.1	contig_12_pilon	99.87		True
+unknown
+846970	848293	62616	61293	NZ_CP038996.1	contig_12_pilon	100.0		True
+unknown
+CONTIG	contig_12_pilon	65557	mis_unaligned
+2664666	2665963	9	1301	NZ_CP038996.1	contig_2_pilon	98.61		True
+relocation, inconsistency = -1795
+2668696	2673646	5829	10779	NZ_CP038996.1	contig_2_pilon	95.94		True
+relocation, inconsistency = 956749
+1704868	1706338	17858	16388	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 1358680
+336631	337695	27415	26351	NZ_CP038996.1	contig_2_pilon	99.72		True
+relocation, inconsistency = 485278
+838169	840513	42611	44955	NZ_CP038996.1	contig_2_pilon	99.87		True
+relocation, inconsistency = 862751
+1706347	1707661	49343	48029	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 1474
+1693624	1704872	60609	49344	NZ_CP038996.1	contig_2_pilon	99.19		True
+relocation, inconsistency = 479145
+1212965	1214478	60610	62123	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 477891
+1692371	1693631	63384	62124	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 37049
+1730681	1732018	63385	64722	NZ_CP038996.1	contig_2_pilon	99.93		True
+relocation, inconsistency = 38302
+1687351	1692378	69750	64723	NZ_CP038996.1	contig_2_pilon	99.84		True
+relocation, inconsistency = -44668
+1730681	1732018	71088	69751	NZ_CP038996.1	contig_2_pilon	99.93		True
+relocation, inconsistency = 43322
+1686888	1687358	71559	71089	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 1068
+1685525	1685819	71854	71560	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 881722
+803301	803802	71855	72357	NZ_CP038996.1	contig_2_pilon	97.42		True
+relocation, inconsistency = 303282
+1107140	1108478	72413	73751	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 570941
+1680102	1685531	79856	74426	NZ_CP038996.1	contig_2_pilon	99.87		True
+relocation, inconsistency = 3033
+1667708	1677068	89218	79857	NZ_CP038996.1	contig_2_pilon	99.86		True
+relocation, inconsistency = -797564
+2463754	2465271	90736	89219	NZ_CP038996.1	contig_2_pilon	99.93		True
+relocation, inconsistency = 796042
+1667254	1667711	91194	90737	NZ_CP038996.1	contig_2_pilon	99.78		True
+relocation, inconsistency = 1363464
+302061	303595	92927	91389	NZ_CP038996.1	contig_2_pilon	99.55		True
+translocation
+73481	74340	92928	93787	NZ_CP038997.1	contig_2_pilon	99.88		True
+translocation
+1725534	1726594	93796	94856	NZ_CP038996.1	contig_2_pilon	99.91		True
+relocation, inconsistency = 58274
+1664026	1667259	98090	94857	NZ_CP038996.1	contig_2_pilon	99.88		True
+relocation, inconsistency = 1522
+1661696	1662503	98898	98091	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 1324000
+336632	337695	99962	98899	NZ_CP038996.1	contig_2_pilon	99.81		True
+relocation, inconsistency = -1325067
+1657951	1661698	103713	99963	NZ_CP038996.1	contig_2_pilon	99.57		True
+relocation, inconsistency = 882007
+771479	773296	106361	108178	NZ_CP038996.1	contig_2_pilon	96.92		True
+local misassembly
+773991	774860	108898	109766	NZ_CP038996.1	contig_2_pilon	96.09		True
+relocation, inconsistency = 1531126
+2308933	2309233	113013	112713	NZ_CP038996.1	contig_2_pilon	95.35		True
+local misassembly
+2308643	2308947	113593	113289	NZ_CP038996.1	contig_2_pilon	98.03		True
+local misassembly
+2307363	2307567	114828	114624	NZ_CP038996.1	contig_2_pilon	95.61		True
+relocation, inconsistency = 285388
+1999394	1999699	137409	137104	NZ_CP038996.1	contig_2_pilon	95.1		True
+relocation, inconsistency = 262147
+1734573	1736679	140085	137977	NZ_CP038996.1	contig_2_pilon	96.26		True
+relocation, inconsistency = 76136
+1657060	1658024	141460	140498	NZ_CP038996.1	contig_2_pilon	99.48		True
+relocation, inconsistency = 72656
+1730681	1732019	141461	142799	NZ_CP038996.1	contig_2_pilon	99.93		True
+relocation, inconsistency = 73614
+1656586	1657066	143280	142800	NZ_CP038996.1	contig_2_pilon	99.79		True
+relocation, inconsistency = 1107845
+547207	548740	144818	143281	NZ_CP038996.1	contig_2_pilon	99.61		True
+relocation, inconsistency = -1109401
+1605010	1656607	196455	144819	NZ_CP038996.1	contig_2_pilon	99.39		True
+relocation, inconsistency = 1067
+1595710	1603942	204643	196456	NZ_CP038996.1	contig_2_pilon	98.18		True
+relocation, inconsistency = 1370
+1593296	1594339	205687	204644	NZ_CP038996.1	contig_2_pilon	98.76		True
+relocation, inconsistency = 3360
+1583072	1589916	212509	205707	NZ_CP038996.1	contig_2_pilon	98.39		True
+local misassembly
+1569510	1583068	226684	213127	NZ_CP038996.1	contig_2_pilon	99.02		True
+relocation, inconsistency = 1230677
+336632	337697	228885	227820	NZ_CP038996.1	contig_2_pilon	99.72		True
+relocation, inconsistency = -1235079
+1568654	1569134	231942	231462	NZ_CP038996.1	contig_2_pilon	98.75		True
+local misassembly
+1532825	1568408	267776	232180	NZ_CP038996.1	contig_2_pilon	99.54		True
+relocation, inconsistency = 1506
+1506723	1531275	292372	267820	NZ_CP038996.1	contig_2_pilon	99.97		True
+relocation, inconsistency = 1891
+1482354	1504831	314850	292373	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = -595084
+2075926	2077437	316362	314851	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 593562
+1434062	1482363	364665	316363	NZ_CP038996.1	contig_2_pilon	99.99		True
+relocation, inconsistency = 1522
+1418592	1432539	378613	364666	NZ_CP038996.1	contig_2_pilon	99.98		True
+relocation, inconsistency = 1891
+1414714	1416700	380600	378614	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = -19348
+1432548	1434061	382114	380601	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 17826
+1404360	1414721	392476	382115	NZ_CP038996.1	contig_2_pilon	99.93		True
+relocation, inconsistency = -1430
+1390743	1404345	407550	393921	NZ_CP038996.1	contig_2_pilon	99.5		True
+local misassembly
+1358783	1390862	439631	407551	NZ_CP038996.1	contig_2_pilon	99.97		True
+relocation, inconsistency = 1511
+1308552	1357271	488352	439632	NZ_CP038996.1	contig_2_pilon	99.96		True
+relocation, inconsistency = 109942
+1467214	1468277	488353	489416	NZ_CP038996.1	contig_2_pilon	99.81		True
+relocation, inconsistency = 158659
+1265183	1308554	532786	489417	NZ_CP038996.1	contig_2_pilon	99.98		True
+relocation, inconsistency = 368560
+1677115	1678628	532787	534300	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 411924
+1162502	1265190	636990	534301	NZ_CP038996.1	contig_2_pilon	99.83		True
+relocation, inconsistency = 1552
+1119144	1160949	678787	636991	NZ_CP038996.1	contig_2_pilon	99.63		True
+relocation, inconsistency = 1522
+1110475	1117621	685934	678788	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 1512
+1106254	1108962	688643	685935	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 1891
+1025889	1104362	767080	688644	NZ_CP038996.1	contig_2_pilon	99.68		True
+relocation, inconsistency = 13267
+1117630	1119143	767081	768594	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 91764
+999623	1025865	794837	768595	NZ_CP038996.1	contig_2_pilon	99.74		True
+local misassembly
+998222	999630	796362	794954	NZ_CP038996.1	contig_2_pilon	99.43		True
+relocation, inconsistency = 1068
+987875	997153	805641	796363	NZ_CP038996.1	contig_2_pilon	99.96		True
+relocation, inconsistency = 9518
+914581	966221	869418	817777	NZ_CP038996.1	contig_2_pilon	99.98		True
+relocation, inconsistency = 521080
+391988	393500	869419	870931	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 518450
+911951	914589	873570	870932	NZ_CP038996.1	contig_2_pilon	99.96		True
+local misassembly
+899037	910420	886476	875090	NZ_CP038996.1	contig_2_pilon	99.91		True
+relocation, inconsistency = 956228
+1866649	1868161	886477	887989	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 967603
+867728	899045	919307	887990	NZ_CP038996.1	contig_2_pilon	99.96		True
+local misassembly
+855318	867733	931871	919456	NZ_CP038996.1	contig_2_pilon	99.73		True
+relocation, inconsistency = 14804
+838170	840513	934215	931872	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = -17287
+848454	855456	941218	934216	NZ_CP038996.1	contig_2_pilon	98.3		True
+relocation, inconsistency = 3892
+802768	832893	983013	952887	NZ_CP038996.1	contig_2_pilon	99.77		True
+relocation, inconsistency = 1165697
+1998591	2000306	983014	984729	NZ_CP038996.1	contig_2_pilon	98.59		True
+relocation, inconsistency = 282739
+2305180	2305265	1006864	1006949	NZ_CP038996.1	contig_2_pilon	97.67		True
+local misassembly
+2316943	2317584	1019198	1019840	NZ_CP038996.1	contig_2_pilon	95.18		True
+relocation, inconsistency = -105232
+2214055	2226786	1021543	1034274	NZ_CP038996.1	contig_2_pilon	99.92		True
+relocation, inconsistency = -1271761
+955141	956205	1034390	1035456	NZ_CP038996.1	contig_2_pilon	99.81		True
+relocation, inconsistency = 1374962
+2331383	2348177	1035672	1052466	NZ_CP038996.1	contig_2_pilon	99.96		True
+translocation
+73301	74339	1052467	1053505	NZ_CP038997.1	contig_2_pilon	99.9		True
+translocation
+2348169	2377273	1053506	1082619	NZ_CP038996.1	contig_2_pilon	99.92		True
+relocation, inconsistency = 4247
+2381521	2383023	1084122	1082620	NZ_CP038996.1	contig_2_pilon	100.0		True
+inversion
+2377266	2381512	1084123	1088369	NZ_CP038996.1	contig_2_pilon	99.98		True
+relocation, inconsistency = 1511
+2383024	2440661	1088370	1146007	NZ_CP038996.1	contig_2_pilon	99.96		True
+relocation, inconsistency = 1068
+2441730	2446389	1146008	1150667	NZ_CP038996.1	contig_2_pilon	99.94		True
+local misassembly
+2446386	2455711	1150793	1160120	NZ_CP038996.1	contig_2_pilon	99.92		True
+local misassembly
+2455836	2463748	1160121	1168033	NZ_CP038996.1	contig_2_pilon	99.9		True
+relocation, inconsistency = 1522
+2465271	2491787	1168034	1194544	NZ_CP038996.1	contig_2_pilon	99.92		True
+relocation, inconsistency = 1684
+2493472	2503597	1194545	1204670	NZ_CP038996.1	contig_2_pilon	99.68		True
+local misassembly
+2503877	2530556	1204671	1231349	NZ_CP038996.1	contig_2_pilon	99.93		True
+relocation, inconsistency = 825248
+1677113	1678628	1232865	1231350	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 851922
+2530551	2531933	1232866	1234248	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 1521
+2533455	2541621	1234249	1242415	NZ_CP038996.1	contig_2_pilon	99.91		True
+relocation, inconsistency = -674973
+1866649	1868162	1242416	1243929	NZ_CP038996.1	contig_2_pilon	100.0		True
+relocation, inconsistency = 673451
+2541614	2618658	1243930	1320973	NZ_CP038996.1	contig_2_pilon	99.96		True
+local misassembly
+2618901	2637228	1320974	1339217	NZ_CP038996.1	contig_2_pilon	99.28		True
+relocation, inconsistency = 4084
+2641511	2643919	1339416	1341827	NZ_CP038996.1	contig_2_pilon	98.55		True
+local misassembly
+2643908	2647218	1341939	1345250	NZ_CP038996.1	contig_2_pilon	97.68		True
+local misassembly
+2647546	2649171	1345856	1347481	NZ_CP038996.1	contig_2_pilon	96.68		True
+relocation, inconsistency = 6523
+2655827	2659189	1347614	1350976	NZ_CP038996.1	contig_2_pilon	99.32		True
+local misassembly
+2659394	2665963	1350981	1357550	NZ_CP038996.1	contig_2_pilon	99.91		True
+relocation, inconsistency = -2711
+2665962	2668399	1360260	1362697	NZ_CP038996.1	contig_2_pilon	100.0		True
+CONTIG	contig_2_pilon	1362697	misassembled
+958612	960407	30949	32744	NZ_CP038996.1	contig_3_pilon	99.89		True
+unknown
+969204	969494	38646	38936	NZ_CP038996.1	contig_3_pilon	98.28		True
+unknown
+CONTIG	contig_3_pilon	38936	mis_unaligned
+967031	976524	21626	12133	NZ_CP038996.1	contig_4_pilon	98.97		True
+CONTIG	contig_4_pilon	26441	correct_unaligned
+CONTIG	contig_5_pilon	3675	unaligned
+987065	987876	6687	5876	NZ_CP038996.1	contig_7_pilon	99.75		True
+unknown
+973578	974810	6707	7939	NZ_CP038996.1	contig_7_pilon	95.94		True
+unknown
+CONTIG	contig_7_pilon	10871	mis_unaligned
+2668696	2671618	9532	12454	NZ_CP038996.1	contig_8_pilon	95.11		True
+unknown
+2671620	2673580	12455	14415	NZ_CP038996.1	contig_8_pilon	99.34		True
+unknown
+CONTIG	contig_8_pilon	14415	mis_unaligned
+55467	56276	1365	2174	NZ_CP038997.1	contig_9_pilon	99.14		True
+unknown
+61627	62436	6797	7606	NZ_CP038997.1	contig_9_pilon	99.63		True
+unknown
+987066	987876	13339	12529	NZ_CP038996.1	contig_9_pilon	99.75		True
+unknown
+1686576	1686888	17495	17183	NZ_CP038996.1	contig_9_pilon	100.0		True
+unknown
+966222	967032	18304	17494	NZ_CP038996.1	contig_9_pilon	99.88		True
+unknown
+987065	987876	23290	22479	NZ_CP038996.1	contig_9_pilon	99.88		True
+unknown
+966213	967030	26043	25226	NZ_CP038996.1	contig_9_pilon	99.76		True
+unknown
+979891	983048	30834	27677	NZ_CP038996.1	contig_9_pilon	100.0		True
+unknown
+CONTIG	contig_9_pilon	32424	mis_unaligned
