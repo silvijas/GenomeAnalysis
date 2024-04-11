@@ -34,8 +34,8 @@ bwa index $ASMB
  
 
 ## Arrays
-declare -A ids
-declare -A dict
+declare -A ids		# It will contain IDs of samples.
+declare -A dict		# It will contain IDs, Serum/BH, directory of sample.
 
 
 ## Function that assigns tag to file depending on a folder where it originated.
@@ -55,12 +55,14 @@ for dir in "$FQs_B" "$FQs_S"; do
 #		echo $file
  
 		id=$(echo $file | grep -oP 'ERR[0-9]+')		
+		ids[$id]=1
+
 		folder_tag=$(get_folder_tag "$file")
-               
-		ids[$id]=1    
+                
 		dict["$id,$folder_tag,$dir"]=1
 	done
 done
+
 
 
 ST=/trim_paired_
@@ -69,12 +71,10 @@ E2=_pass_2.fastq.gz
 
 for key in "${!dict[@]}"; do
 	IFS=',' read -r id folder_tag dir <<< "$key"
-#	echo "id= $id, folder_tag= $folder_tag, folder= $dir"
+	echo "id= $id, folder_tag= $folder_tag, folder= $dir"
 
 	ILL1="${dir}${ST}${id}${E1}"
 	ILL2="${dir}${ST}${id}${E2}"
-#	echo $ILL1
-#	echo $ILL2
 
 	prefix=${ODir}/${folder_tag}_${id}_paired
 #	echo $prefix
@@ -83,6 +83,9 @@ for key in "${!dict[@]}"; do
 	samtools view  ${prefix}.sam 	    -bo ${prefix}.bam
 	samtools sort  ${prefix}.bam 	    -o 	${prefix}_sorted.bam
 	samtools index ${prefix}_sorted.bam -o  ${prefix}_sorted.bai
+
+	rm ${prefix}.sam
+ 	rm ${prefix}.bam
 done
 
 
