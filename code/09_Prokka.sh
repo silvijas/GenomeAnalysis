@@ -22,11 +22,13 @@ set -euo pipefail
 # Varibles
 ODir=~/GenomeAnalysis/analysis/09_Prokka
 ASM=~/GenomeAnalysis/analysis/04_Spades/contigs.fasta
+prefix=spades_prokka
 
 
 # Commands
-prokka --outdir $ODir --force --prefix spades_prokka \
+prokka --outdir $ODir --force --prefix $prefix \
        --genus Enterococcus --species faecium --strain E745 \
        --kingdom Bacteria --gram pos \
        $ASM
             
+sed '/^##FASTA/Q' "${ODir}/${prefix}.gff" > "${ODir}/${prefix}_noSeq.gff"

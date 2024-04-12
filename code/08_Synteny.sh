@@ -12,7 +12,7 @@
 
 # Load modules
 module load bioinfo-tools
-module load blast/2.15.0+
+module load blast/2.15.0+ artemis/16.0.0
 
 
 # Stop executing, if there is error
@@ -26,5 +26,10 @@ ASM=~/GenomeAnalysis/analysis/04_Spades/contigs.fasta
 
 
 # Commands
+
 blastn -query $ASM -subject <(gunzip -c $REF) -outfmt 6 -out "${ODir}/spades_blast.out"
+
+## Visualization : Done on Windows as it was not working due to Windows X11
+#act $REF "${ODir}/spades_blast.out" $ASM
+
 
