@@ -1,0 +1,63 @@
+augustus/3.5.0-20231223-33fc04d: If you see errors about not being able to write to an augustus directory, see 'module help augustus/3.5.0-20231223-33fc04d'
+The environment variable BUSCO_LINEAGE_SETS is set to a directory containing
+BUSCO v5 lineage sets.  Use with the -l option, for example:
+
+    busco -l $BUSCO_LINEAGE_SETS/fungi_odb10 ...
+
+A list of available lineage sets is provided via 'module help BUSCO/5.5.0'
+
+----
+If you see this error from BUSCO:
+
+    Error: Cannot write to Augustus directory, please make sure you have write permissions to <directory>
+
+then you need to create a local copy of the config directory from the augustus
+module with 'source $AUGUSTUS_CONFIG_COPY'.  See 'module help augustus/3.5.0-20231223-33fc04d'
+
+Copying Augustus config directory to current directory...adjusting permissions...updating AUGUSTUS_CONFIG_PATH...done
+export AUGUSTUS_CONFIG_PATH=/home/silvijas/GenomeAnalysis/code/augustus_config
+2024-04-12 20:31:17 INFO:	***** Start a BUSCO v5.5.0 analysis, current time: 04/12/2024 20:31:17 *****
+2024-04-12 20:31:17 INFO:	Configuring BUSCO with /sw/bioinfo/BUSCO/5.5.0/snowy/config.ini
+2024-04-12 20:31:17 INFO:	Mode is genome
+2024-04-12 20:31:17 INFO:	Input file is /home/silvijas/GenomeAnalysis/analysis/06_Pilon/pilon.fasta
+2024-04-12 20:31:17 INFO:	Using local lineages directory /sw/bioinfo/BUSCO/v5_lineage_sets/lineages/bacteria_odb10
+2024-04-12 20:31:18 INFO:	Running BUSCO using lineage dataset bacteria_odb10 (prokaryota, 2024-01-08)
+2024-04-12 20:31:18 INFO:	Running 1 job(s) on bbtools, starting at 04/12/2024 20:31:18
+2024-04-12 20:31:23 INFO:	[bbtools]	1 of 1 task(s) completed
+2024-04-12 20:31:23 INFO:	***** Run Prodigal on input to predict and extract genes *****
+2024-04-12 20:31:23 INFO:	Running Prodigal with genetic code 11 in single mode
+2024-04-12 20:31:23 INFO:	Running 1 job(s) on prodigal, starting at 04/12/2024 20:31:23
+2024-04-12 20:31:33 INFO:	[prodigal]	1 of 1 task(s) completed
+2024-04-12 20:31:33 INFO:	Genetic code 11 selected as optimal
+2024-04-12 20:31:33 INFO:	***** Run HMMER on gene sequences *****
+2024-04-12 20:31:33 INFO:	Running 124 job(s) on hmmsearch, starting at 04/12/2024 20:31:33
+2024-04-12 20:31:38 INFO:	[hmmsearch]	13 of 124 task(s) completed
+2024-04-12 20:31:39 INFO:	[hmmsearch]	25 of 124 task(s) completed
+2024-04-12 20:31:39 INFO:	[hmmsearch]	38 of 124 task(s) completed
+2024-04-12 20:31:39 INFO:	[hmmsearch]	50 of 124 task(s) completed
+2024-04-12 20:31:39 INFO:	[hmmsearch]	63 of 124 task(s) completed
+2024-04-12 20:31:39 INFO:	[hmmsearch]	75 of 124 task(s) completed
+2024-04-12 20:31:39 INFO:	[hmmsearch]	87 of 124 task(s) completed
+2024-04-12 20:31:39 INFO:	[hmmsearch]	100 of 124 task(s) completed
+2024-04-12 20:31:39 INFO:	[hmmsearch]	112 of 124 task(s) completed
+2024-04-12 20:31:40 INFO:	[hmmsearch]	124 of 124 task(s) completed
+2024-04-12 20:31:45 INFO:	Results:	C:98.4%[S:96.8%,D:1.6%],F:1.6%,M:0.0%,n:124	   
+
+2024-04-12 20:31:46 INFO:	
+
+	---------------------------------------------------
+	|Results from dataset bacteria_odb10               |
+	---------------------------------------------------
+	|C:98.4%[S:96.8%,D:1.6%],F:1.6%,M:0.0%,n:124       |
+	|122	Complete BUSCOs (C)                        |
+	|120	Complete and single-copy BUSCOs (S)        |
+	|2	Complete and duplicated BUSCOs (D)         |
+	|2	Fragmented BUSCOs (F)                      |
+	|0	Missing BUSCOs (M)                         |
+	|124	Total BUSCO groups searched                |
+	---------------------------------------------------
+2024-04-12 20:31:46 INFO:	BUSCO analysis done. Total running time: 28 seconds
+2024-04-12 20:31:46 INFO:	Results written in /domus/h1/silvijas/GenomeAnalysis/code/busco_pilon
+2024-04-12 20:31:46 INFO:	For assistance with interpreting the results, please consult the userguide: https://busco.ezlab.org/busco_userguide.html
+
+2024-04-12 20:31:46 INFO:	Visit this page https://gitlab.com/ezlab/busco#how-to-cite-busco to see how to cite BUSCO
