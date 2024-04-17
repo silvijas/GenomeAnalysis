@@ -22,6 +22,7 @@ set -euo pipefail
 # Variables
 ODir=~/GenomeAnalysis/analysis/16_Busco
 REF=~/GenomeAnalysis/data/REF/GCF_009734005.1_ASM973400v2_genomic.fna.gz
+REF_f=~/GenomeAnalysis/data/REF/GCF_009734005.1_ASM973400v2_genomic.fna
 
 ## Spades assembly
 S_ASS=~/GenomeAnalysis/analysis/04_Spades/contigs.fasta
@@ -32,5 +33,11 @@ P_ASS=~/GenomeAnalysis/analysis/06_Pilon/pilon.fasta
 
 source $AUGUSTUS_CONFIG_COPY
 
-busco -i $S_ASS -o busco_spades -l $BUSCO_LINEAGE_SETS/bacteria -m genome -c 8 -f
-busco -i $P_ASS -o busco_pilon  -l $BUSCO_LINEAGE_SETS/bacteria -m genome -c 8 -f
+busco -i $S_ASS -o spades_bacteria        -l $BUSCO_LINEAGE_SETS/bacteria               -m genome -c 8 -f --out_path $ODir --download_path $ODir
+busco -i $P_ASS -o pilon_bacteria         -l $BUSCO_LINEAGE_SETS/bacteria               -m genome -c 8 -f --out_path $ODir --download_path $ODir
+
+busco -i $S_ASS -o spades_e_bacterales    -l $BUSCO_LINEAGE_SETS/enterobacterales_odb10 -m genome -c 8 -f --out_path $ODir --download_path $ODir
+busco -i $P_ASS -o pilon_e_bacterales     -l $BUSCO_LINEAGE_SETS/enterobacterales_odb10 -m genome -c 8 -f --out_path $ODir --download_path $ODir
+
+busco -i $REF_f -o reference_e_bacterales -l $BUSCO_LINEAGE_SETS/enterobacterales_odb10 -m genome -c 8 -f --out_path $ODir --download_path $ODir
+
