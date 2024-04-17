@@ -29,9 +29,9 @@ ILL2=~/GenomeAnalysis/data/DNA/Illumina/E745-1.L500_SZAXPI015146-56_2_clean.fq.g
 
 # Commands
 
-#bwa index $ASMB 
+bwa index $ASMB 
 
-#bwa mem -t 8 $ASMB $ILL1 $ILL2 > "${ODir}/aln_Ill2PacBio.sam"
+bwa mem -t 8 $ASMB $ILL1 $ILL2 > "${ODir}/aln_Ill2PacBio.sam"
 
 ## Converting file SAM -> BAM	From :: https://www.htslib.org/doc/samtools-view.html
 samtools view -bo "${ODir}/aln_Ill2PacBio.bam" "${ODir}/aln_Ill2PacBio.sam"
