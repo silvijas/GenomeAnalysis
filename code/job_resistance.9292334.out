@@ -1,0 +1,5 @@
+Using nucl database ncbi:  5386 sequences -  2022-Oct-20
+Processing: /home/silvijas/GenomeAnalysis/analysis/04_Spades/contigs.fasta
+Found 9 genes in /home/silvijas/GenomeAnalysis/analysis/04_Spades/contigs.fasta
+Tip: you can use the --summary option to combine reports in a presence/absence matrix.
+Done.

@@ -1,0 +1,2 @@
+ERR1797972
+/var/spool/slurmd/job9292905/slurm_script: line 50: /home/silvijas/GenomeAnalysis/analysis/10_RNA_map_s/Error_ERR1797972_readcount.txt: No such file or directory
