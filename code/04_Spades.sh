@@ -15,10 +15,20 @@ module load bioinfo-tools
 module load spades/3.15.5
 
 
-# Your commands
-spades.py \
--1 ~/GenomeAnalysis/data/DNA/Illumina/E745-1.L500_SZAXPI015146-56_1_clean.fq.gz \ 
--2 ~/GenomeAnalysis/data/DNA/Illumina/E745-1.L500_SZAXPI015146-56_2_clean.fq.gz \ 
---pacbio ~/GenomeAnalysis/data/DNA/PacBio/* \ 
--o ~/GenomeAnalysis/analysis/04_Spades/
+# Stop executing, if there is error
+set -euo pipefail
 
+
+# Variables 
+ODir=~/GenomeAnalysis/analysis/04_Spades
+ILL1=~/GenomeAnalysis/data/DNA/Illumina/E745-1.L500_SZAXPI015146-56_1_clean.fq.gz
+ILL2=~/GenomeAnalysis/data/DNA/Illumina/E745-1.L500_SZAXPI015146-56_2_clean.fq.gz
+
+
+# Commands
+zcat ~/GenomeAnalysis/data/DNA/PacBio/* > ~/GenomeAnalysis/total_PacBio.fastq
+gzip ~/GenomeAnalysis/total_PacBio.fastq
+
+spades.py -1 $ILL1 -2 $ILL2 --pacbio ~/GenomeAnalysis/total_PacBio.fastq.gz -o $ODir
+
+rm ~/GenomeAnalysis/total_PacBio.fastq.gz
