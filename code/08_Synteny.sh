@@ -22,14 +22,14 @@ set -euo pipefail
 # Variables
 ODir=~/GenomeAnalysis/analysis/08_Synteny
 REF=~/GenomeAnalysis/data/REF/GCF_009734005.1_ASM973400v2_genomic.fna.gz
-ASM=~/GenomeAnalysis/analysis/04_Spades/contigs.fasta
+ASM=~/GenomeAnalysis/analysis/04_Spades/contigs_filtered_folded.fasta
 
 
 # Commands
 
-blastn -query $ASM -subject <(gunzip -c $REF) -outfmt 6 -out "${ODir}/spades_blast.out"
+blastn -query $ASM -subject <(gunzip -c $REF) -outfmt 6 -out "${ODir}/spades_filtered_blast.out"
 
-## Visualization : Done on Windows as it was not working due to Windows X11
+## Visualization : Done on Windows as it was not working due to Windows X11 error
 #act $REF "${ODir}/spades_blast.out" $ASM
 
 

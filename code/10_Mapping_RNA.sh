@@ -29,7 +29,6 @@ FQs_S=~/GenomeAnalysis/data/RNA/RNA-Seq_Serum
 
 
 # Commands
-
 bwa index $ASMB
  
 
@@ -77,7 +76,7 @@ for key in "${!dict[@]}"; do
 	ILL2="${dir}${ST}${id}${E2}"
 
 	prefix=${ODir}/${folder_tag}_${id}_paired
-#	echo $prefix
+	echo $prefix
 
 	bwa mem -t 8 $ASMB $ILL1 $ILL2 > ${prefix}.sam	
 	samtools view  ${prefix}.sam 	    -bo ${prefix}.bam
@@ -86,6 +85,7 @@ for key in "${!dict[@]}"; do
 
 	rm ${prefix}.sam
  	rm ${prefix}.bam
+
 done
 
 

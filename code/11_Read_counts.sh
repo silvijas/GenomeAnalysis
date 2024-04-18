@@ -24,8 +24,19 @@ ODir=~/GenomeAnalysis/analysis/11_Read_counts
 BAMs=~/GenomeAnalysis/analysis/10_RNA_mapping
 ANN=~/GenomeAnalysis/analysis/09_Prokka/spades_prokka_noSeq.gff
 
-
 # Commands
+
+## Function that assigns tag to file depending on a folder where it originated.
+get_folder_tag(){
+	if [[ $1 == *"BH"* ]]; then
+		echo "BH"
+	elif [[ $1 == *"Serum"* ]]; then 
+		echo "Serum"
+	else 
+		echo "Error"
+	fi
+}
+
 for file in ${BAMs}/*_sorted.bam; do
 
 #	echo $file
@@ -33,8 +44,9 @@ for file in ${BAMs}/*_sorted.bam; do
 	id=$(echo $file | grep -oP 'ERR[0-9]+')
 	echo $id
 
+	folder_tag=$(get_folder_tag "$file")
 
-	htseq-count -t CDS -r pos -i ID $file $ANN > "${ODir}/${id}_readcount.txt"
+	htseq-count -t CDS -r pos -i ID $file -f bam -s no $ANN > "${ODir}/${folder_tag}_${id}_readcount.txt"
 done
 
 
