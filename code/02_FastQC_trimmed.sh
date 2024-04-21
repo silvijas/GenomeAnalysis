@@ -15,5 +15,13 @@ module load bioinfo-tools
 module load FastQC/0.11.9
 
 
+# Variables 
+ODir=~/GA/GenomeAnalysis/results/02_FastQC_trimmed/
+
+FP=~/GA/GenomeAnalysis/results/01_Trimmomatic/E745-1_out_forward_paired.fastq
+RP=~/GA/GenomeAnalysis/results/01_Trimmomatic/E745-1_out_reverse_paired.fastq
+FUP=~/GA/GenomeAnalysis/results/01_Trimmomatic/E745-1_out_forward_unpaired.fastq
+RUP=~/GA/GenomeAnalysis/results/01_Trimmomatic/E745-1_out_reverse_unpaired.fastq
+
 # Your commands
-fastqc -o ~/GA/GenomeAnalysis/results/02_FastQC_trimmed/ ~/GA/GenomeAnalysis/results/01_Trimmomatic/E745-1_out_forward_paired.fastq ~/GA/GenomeAnalysis/results/01_Trimmomatic/E745-1_out_forward_unpaired.fastq ~/GA/GenomeAnalysis/results/01_Trimmomatic/E745-1_out_reverse_paired.fastq ~/GA/GenomeAnalysis/results/01_Trimmomatic/E745-1_out_reverse_unpaired.fastq
+fastqc -o $ODir $FP $FUP $RP $RUP

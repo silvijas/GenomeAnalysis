@@ -47,7 +47,7 @@ for file in ${BAMs}/*_sorted.bam; do
 	folder_tag=$(get_folder_tag "$file")
 #	echo $folder_tag
 
-	htseq-count -t CDS -r pos -i ID $file $ANN > "${ODir}/${folder_tag}_${id}_readcount.txt"
+	htseq-count -t CDS -r pos -i ID -f bam -s no $file $ANN > "${ODir}/${folder_tag}_${id}_readcount.txt"
 done
 
 
