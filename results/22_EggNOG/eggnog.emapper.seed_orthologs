@@ -1,0 +1,22 @@
+## Tue Apr 23 19:03:14 2024
+## emapper-2.1.9-678c2fd
+## /sw/bioinfo/eggNOG-mapper/2.1.9/snowy/bin/emapper.py -i /home/silvijas/GenomeAnalysis/code/sign_genes.fasta --output_dir /home/silvijas/GenomeAnalysis/analysis/22_EggNOG --output eggnog -m diamond --cpu 8 --decorate_gff /home/silvijas/GenomeAnalysis/analysis/09_Prokka/spades_prokka_noSeq.gff --override
+##
+##/sw/bioinfo/eggNOG-mapper/2.1.9/snowy/bin/diamond blastp -d /crex/data/eggNOG_data/5.0.0/rackham/eggnog_proteins.dmnd -q /domus/h1/silvijas/GenomeAnalysis/code/sign_genes.fasta --threads 8 -o /domus/h1/silvijas/GenomeAnalysis/analysis/22_EggNOG/eggnog.emapper.hits --tmpdir /domus/h1/silvijas/GenomeAnalysis/analysis/22_EggNOG/emappertmp_dmdn_jw5706ev --sensitive --iterate -e 0.001 --top 3  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp
+#qseqid	sseqid	evalue	bitscore	qstart	qend	sstart	send	pident	qcov	scov
+HDIIENPN_00070	565664.EFXG_02169	9.9e-304	827.0	1	414	1	414	100.0	100.0	100.0
+HDIIENPN_00211	1104325.M7W_2150	6.08e-177	493.0	1	255	1	255	100.0	100.0	100.0
+HDIIENPN_00232	565664.EFXG_01081	0.0	1819.0	1	944	1	944	100.0	100.0	100.0
+HDIIENPN_00236	1104325.M7W_2127	1.95e-218	602.0	1	304	1	304	100.0	100.0	100.0
+HDIIENPN_00332	565664.EFXG_01764	0.0	1394.0	1	708	1	708	100.0	100.0	100.0
+HDIIENPN_00620	565664.EFXG_00810	7.61e-305	833.0	1	444	1	444	100.0	100.0	100.0
+HDIIENPN_00803	565664.EFXG_02450	4.35e-125	355.0	1	173	1	173	100.0	100.0	100.0
+HDIIENPN_01045	1104325.M7W_1230	0.0	1283.0	1	664	1	664	100.0	100.0	100.0
+HDIIENPN_02002	1104325.M7W_2514	0.0	1812.0	1	900	1	900	100.0	100.0	100.0
+HDIIENPN_02396	565664.EFXG_00279	0.0	1739.0	1	885	1	885	100.0	100.0	100.0
+HDIIENPN_02795	1104325.M7W_2565	0.0	937.0	1	466	1	466	100.0	100.0	100.0
+HDIIENPN_02942	1175629.AJTG01000028_gene215	0.0	1338.0	1	650	1	650	100.0	100.0	100.0
+HDIIENPN_03029	1158601.I585_04577	5.54e-22	109.0	244	389	167	303	44.2	21.2	22.6
+## 13 queries scanned
+## Total time (seconds): 0.017116308212280273
+## Rate: 759.51 q/s
