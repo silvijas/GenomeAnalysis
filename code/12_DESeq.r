@@ -1,7 +1,7 @@
 # https://www.biostars.org/p/343138/
 
 if (!requireNamespace("BiocManager", quietly = TRUE))
-   install.packages("BiocManager")
+  install.packages("BiocManager")
 BiocManager::install("DESeq2")
 BiocManager::install("apeglm")
 BiocManager::install("pheatmap")
@@ -14,9 +14,8 @@ library("pheatmap")
 library("genefilter")
 
 
-
 # Path to the HTSeq output data.
-directory <- "data/RNA/"
+directory <- "data/RNA_s/"
 
 # Using files from specified directory that contain "ERR" in their file name.
 sampleFiles <- grep("ERR", list.files(directory), value=TRUE)
@@ -63,15 +62,11 @@ summary(res)
 resultsNames(dds)
 
 
-
 ####### Shrinkage ######
 
 # Shrinkage of effect size (LFC estimates) is useful for visualization and ranking of genes
 resLFC <- lfcShrink(dds, coef="condition_Serum_vs_BH", type="apeglm")
 resLFC
-
-
-
 
 
 ####### Plot counts #######
@@ -93,17 +88,12 @@ ggplot(signGene, aes(x=condition, y=count)) +
   geom_point(position=position_jitter(w=0.1,h=0)) + 
   scale_y_log10(breaks=c(25,100,400))
 
-
-
 # Columns of res
 mcols(resLFC)$description
 
 
 
-
-
-
-
+####### Logarithmic transformations #######
 
 # Performs a regularized logarithm transformation of the count data.
 #   Stabilizes variance across the range of mean values - helpful in the methods that assume constant variance.
@@ -119,6 +109,7 @@ head(assay(rld), 3)
 colData(rld)
 
 
+####### Heat maps #######
 
 ### Heat map of all genes
 
@@ -137,7 +128,6 @@ anno <- as.data.frame(colData(rld)[,c("condition")])
 colnames(anno) <- "condition"
 rownames(anno) <- colnames(matAll)
 pheatmap(matAll, cluster_rows=FALSE, cluster_cols=FALSE, annotation_col = anno, main = "Heat map of all genes")
-
 
 
 ### Heat map of significant genes
@@ -162,23 +152,28 @@ pheatmap(matSig, cluster_rows=FALSE, cluster_cols=FALSE, annotation_col = anno, 
 
 
 
-
-
-
-
+### Heat map of significant genes based on filter from the paper
 
 # genes that show significant effect
-sig05 <- subset(res, padj < 0.05)
-sig05
-
-sig01 <- subset(res, padj < 0.01)
-sig01
+sig001 <- subset(res, padj < 0.001 & (abs(log2FoldChange) > 2 | abs(log2FoldChange) < 0.5))
+sig001
 
 
-sig005 <- subset(res, padj < 0.005)
-sig005
+sg_filter <- rownames(sig001)
+sg_data <- assay(rld)[sg_filter, ]
+sg_data
 
+total_columns <- ncol(sg_data)
+half_column_index <- total_columns %/% 2 
+H1 <- sg_data[, 1:half_column_index]
+H2 <- sg_data[, (half_column_index + 1):total_columns]
+H1 <- H1 - rowMeans(H1)
+H2 <- H2 - rowMeans(H2)
+sg_data <- cbind(H1, H2)
 
-head(sig05[ order(sig05$log2FoldChange), ])
+anno <- as.data.frame(colData(rld)[,c("condition")])
+colnames(anno) <- "condition"
+rownames(anno) <- colnames(sg_data)
 
-
+#show_rownames=FALSE
+pheatmap(sg_data, cluster_rows=FALSE, cluster_cols=FALSE, annotation_col = anno, main = "Heat map of significant genes")

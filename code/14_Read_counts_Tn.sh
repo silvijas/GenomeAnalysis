@@ -20,9 +20,10 @@ set -euo pipefail
 
 
 # Variables
-ODir=~/GenomeAnalysis/analysis/14_Read_counts_Tn
+ODir=~/GenomeAnalysis/analysis/14_Read_counts_Tn_3_eg
 BAMs=~/GenomeAnalysis/analysis/13_Tn_mapping
-ANN=~/GenomeAnalysis/analysis/09_Prokka/spades_prokka_noSeq.gff
+#ANN=~/GenomeAnalysis/analysis/09_Prokka/spades_prokka_noSeq_90perc.gff
+ANN=~/GenomeAnalysis/analysis/22_EggNOG/eggnog.emapper.decorated.gff
 
 # Commands
 
@@ -39,13 +40,13 @@ get_folder_tag(){
 
 for file in ${BAMs}/*_sorted.bam; do
 
-#	echo $file
+	echo $file
 
 	id=$(echo $file | grep -oP 'ERR[0-9]+')
-#	echo $id
+	echo $id
 
 	folder_tag=$(get_folder_tag "$file")
-#	echo $folder_tag
+	echo $folder_tag
 
 	htseq-count -t CDS -r pos -i ID -f bam -s no $file $ANN > "${ODir}/${folder_tag}_${id}_readcount.txt"
 done

@@ -1,0 +1,43 @@
+Command line: /sw/bioinfo/spades/3.15.5/snowy/bin/spades.py	-1	/home/silvijas/GenomeAnalysis/data/DNA/Illumina/E745-1.L500_SZAXPI015146-56_1_clean.fq.gz	-2	/home/silvijas/GenomeAnalysis/data/DNA/Illumina/E745-1.L500_SZAXPI015146-56_2_clean.fq.gz	--pacbio	/home/silvijas/GenomeAnalysis/total_PacBio.fastq.gz	-o	/home/silvijas/GenomeAnalysis/analysis/04_Spades	
+
+System information:
+  SPAdes version: 3.15.5
+  Python version: 2.7.5
+  OS: Linux-3.10.0-1160.114.2.el7.x86_64-x86_64-with-centos-7.9.2009-Core
+
+Output dir: /home/silvijas/GenomeAnalysis/analysis/04_Spades
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: pacbio
+      left reads: not specified
+      right reads: not specified
+      interlaced reads: not specified
+      single reads: ['/home/silvijas/GenomeAnalysis/total_PacBio.fastq.gz']
+      merged reads: not specified
+    Library number: 2, library type: paired-end
+      orientation: fr
+      left reads: ['/home/silvijas/GenomeAnalysis/data/DNA/Illumina/E745-1.L500_SZAXPI015146-56_1_clean.fq.gz']
+      right reads: ['/home/silvijas/GenomeAnalysis/data/DNA/Illumina/E745-1.L500_SZAXPI015146-56_2_clean.fq.gz']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: automatic selection based on read length
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /home/silvijas/GenomeAnalysis/analysis/04_Spades/tmp
+  Threads: 16
+  Memory limit (in Gb): 125
+

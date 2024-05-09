@@ -15,5 +15,10 @@ module load bioinfo-tools
 module load Flye/2.9.1
 
 
+# Variables
+DATA=~/GenomeAnalysis/data/DNA/PacBio/*
+ODir=~/GenomeAnalysis/analysis/03_Flye/
+
+
 # Commands
-flye --pacbio-raw ~/GenomeAnalysis/data/DNA/PacBio/* --out-dir ~/GenomeAnalysis/analysis/03_Flye/ --threads 4
+flye --pacbio-raw $DATA --out-dir $ODir --threads 4
