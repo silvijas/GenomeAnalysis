@@ -68,6 +68,8 @@ ST=/trim_paired_
 E1=_pass_1.fastq.gz
 E2=_pass_2.fastq.gz
 
+echo "sample_id,count_mapped_reads,count_total_reads,percentage" > "${ODir}/percentages.csv"
+
 for key in "${!dict[@]}"; do
 	IFS=',' read -r id folder_tag dir <<< "$key"
 	echo "id= $id, folder_tag= $folder_tag, folder= $dir"
@@ -86,7 +88,18 @@ for key in "${!dict[@]}"; do
 	rm ${prefix}.sam
  	rm ${prefix}.bam
 
+
+	# For assesing quality of mapping
+	samtools flagstat ${prefix}_sorted.bam > ${prefix}_flagstat.txt
+	samtools idxstats ${prefix}_sorted.bam > ${prefix}_idxstats.txt
+
+	total_reads=$(grep -P 'in total' ${prefix}_flagstat.txt | grep -oP '\d+' | head -1)
+    	mapped_reads=$(grep -P 'mapped \(' ${prefix}_flagstat.txt | grep -oP '\d+' | head -1)
+ 	percentage=$(grep -P 'mapped \(' ${prefix}_flagstat.txt | head -1 | grep -oP '(?<=\()\d+\.\d+(?=%)')
+
+    	echo "$id,$mapped_reads,$total_reads,$percentage" >> "${ODir}/percentages.csv"	
 done
+
 
 
  
