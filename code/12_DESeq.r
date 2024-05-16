@@ -177,3 +177,46 @@ rownames(anno) <- colnames(sg_data)
 
 #show_rownames=FALSE
 pheatmap(sg_data, cluster_rows=FALSE, cluster_cols=FALSE, annotation_col = anno, main = "Heat map of significant genes")
+
+
+
+
+### Heat map of significant genes based on filter from the paper
+
+# genes that show significant effect
+sig001 <- subset(res, padj < 0.001 & (abs(log2FoldChange) > 2 | abs(log2FoldChange) < 0.5))
+sig001
+
+upReg <- rownames(sig001[order(-sig001$log2FoldChange), ])[1:15]
+downReg <-rownames(sig001[order(sig001$log2FoldChange), ])[1:15]
+sig001Reg <- c(upReg, downReg)
+
+#show_rownames=FALSE
+pheatmap(assay(rld)[sig001Reg, ], cluster_rows=FALSE, cluster_cols=FALSE, annotation_col = anno, main = "Heat map of significant genes")
+
+
+
+
+
+# Load the annotation data
+prokka_data <- read.table("data/spades_prokka.tsv", sep="\t", header=TRUE, quote="")
+
+# Subset CDS data (as that is what we counted)
+prokka <- prokka_data[prokka_data$ftype == "CDS",]
+
+# Filtering top 30 most significant up and down regulated genes.
+filtered_prokka <- prokka[prokka$locus_tag %in% sig001Reg, ]
+filtered_prokka
+
+regulated_prokka <- filtered_prokka %>%
+  mutate(Regulated = case_when(
+    locus_tag %in% upReg ~ "Up regulated",
+    locus_tag %in% downReg ~ "Down regulated"
+  ))
+regulated_prokka
+
+
+results_dir <- "data/results/"
+results_path <- file.path(results_dir, "12_Differential_expression_sign30genes.csv")
+write.csv(regulated_prokka, results_path, row.names = FALSE)
+
