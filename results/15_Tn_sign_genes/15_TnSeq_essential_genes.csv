@@ -1,0 +1,14 @@
+"locus_tag","ftype","length_bp","gene","EC_number","COG","product","p_values","fitness"
+"HDIIENPN_02795","CDS",1401,"","","","hypothetical protein",2.88466671083188e-05,-83.1494732155816
+"HDIIENPN_00232","CDS",2835,"dgaR_2","","","Transcriptional regulatory protein DagR",0.00018947128135842,2.28092043502679
+"HDIIENPN_02396","CDS",2658,"norR_1","","","Anaerobic nitric oxide reductase transcription regulator NorR",0.00381456676675769,-3.74001431431189
+"HDIIENPN_00236","CDS",915,"manZ_2","","COG3716","PTS system mannose-specific EIID component",0.00529248345645091,22.7341327974896
+"HDIIENPN_00070","CDS",1245,"","","","hypothetical protein",0.00671741385591262,4.01318971546313
+"HDIIENPN_02942","CDS",1953,"","","","hypothetical protein",0.0116362628002286,0.437318222106673
+"HDIIENPN_00620","CDS",1335,"rpoN1","","COG1508","RNA polymerase sigma-54 factor 1",0.021966806341948,1.20305684200328
+"HDIIENPN_02002","CDS",2703,"mngB","3.2.1.-","COG0383","Mannosylglycerate hydrolase",0.0248141511094105,-0.465040873126061
+"HDIIENPN_03029","CDS",2067,"","","","hypothetical protein",0.0276433355820617,96.3607257232867
+"HDIIENPN_00332","CDS",2127,"","","","hypothetical protein",0.0294999049838378,-0.908191384551728
+"HDIIENPN_00803","CDS",522,"","","","IS1595 family transposase ISCac2",0.0412575315087723,-2.23520614100667
+"HDIIENPN_01045","CDS",1995,"uvrB","","COG0556","UvrABC system protein B",0.041749769348791,0.514678687556261
+"HDIIENPN_00211","CDS",768,"bceA_1","","COG1136","Bacitracin export ATP-binding protein BceA",0.049117415716164,-0.229981437936985
